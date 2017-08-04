@@ -1,9 +1,9 @@
 ﻿
 @{
-    ViewBag.Title = "Add Entry";
+//ViewBag.Title = "Add Entry";
 }
 
-<h2>@ViewBag.Title</h2>
+@*<h2>@ViewBag.Title</h2>*@
 
 <form method="post">
 
@@ -33,7 +33,7 @@
 
             <div class="form-group">
                 <label for="Exclude" class="control-label">Exclude</label>
-                <input type="text" id="Exclude" name="Exclude" class="form-control" value="@(ViewBag.Exclude ? ViewBag.Exclude.ToString() : "")" />
+                <input type="text" id="Exclude" name="Exclude" class="form-control" value="@(ViewBag.Exclude != null ? ViewBag.Exclude.ToString() : "")" />
             </div>
 
         </div>
